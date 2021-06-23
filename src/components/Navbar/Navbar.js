@@ -2,7 +2,10 @@ import React from 'react'
 import Aux from '../HOC/Aux';
 import {FaBars} from 'react-icons/fa';
 import Logo from '../../images/ts-1.png'
-import { Nav,NavContainer , NavLogo , MobileIcon, NavMenu, NavItem, NavLink , NavBtn, NavBtnLink } from './navbarStyling';
+import { Nav,NavContainer ,
+     NavLogo ,MobileIcon, 
+      NavMenu, NavItem, 
+      NavLink , NavBtn, NavBtnLink } from './navbarStyling';
 
 
 const Navbar = () => {

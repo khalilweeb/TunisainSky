@@ -1,11 +1,24 @@
 import React from 'react'
-
+import { SideBarContainer, Icon , CloseIcon , SideBarWrapper , SideBarLink , SideBtn , SideBarRoute , SideBarMenu} from './sidebarStyling';
 const Sidebar = () => {
     return (
         <SideBarContainer>
             <Icon>
                 <CloseIcon/>
             </Icon>
+            <SideBarWrapper>
+                <SideBarMenu>
+                    <SideBarLink to='/rules'> Rules </SideBarLink>
+                    <SideBarLink to='/Application'> Application </SideBarLink>
+                    <SideBarLink to='/Category'> Category</SideBarLink>
+                    <SideBarLink to='/Shop'> Shop</SideBarLink>
+                </SideBarMenu>
+                <SideBtn>
+                    <SideBarRoute to='/About'>
+                        About
+                    </SideBarRoute>
+                </SideBtn>
+            </SideBarWrapper>
         </SideBarContainer>
     )
 }
