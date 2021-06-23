@@ -8,13 +8,13 @@ import { Nav,NavContainer ,
       NavLink , NavBtn, NavBtnLink } from './navbarStyling';
 
 
-const Navbar = () => {
+const Navbar = (props) => {
     return (
         <Aux>
             <Nav>
                 <NavContainer>
                     <NavLogo to='/'> <img src={Logo} alt='logo' style={{width:'90px' , height: '100%'}}/> </NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={props.toggle}>
                         <FaBars/>
                     </MobileIcon>
                     <NavMenu>

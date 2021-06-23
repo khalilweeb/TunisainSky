@@ -1,11 +1,11 @@
 import React from 'react'
 import { SideBarContainer, Icon , CloseIcon , SideBarWrapper , SideBarLink , SideBtn , SideBarRoute , SideBarMenu} from './sidebarStyling';
-const Sidebar = () => {
+const Sidebar = (props) => {
     return (
-        <SideBarContainer>
-            <Icon>
+        <SideBarContainer isOpen={props.isOpen} onClick={props.toggle}>
+            <Icon onClick={props.toggle}>
                 <CloseIcon/>
-            </Icon>
+            </Icon >
             <SideBarWrapper>
                 <SideBarMenu>
                     <SideBarLink to='/rules'> Rules </SideBarLink>
