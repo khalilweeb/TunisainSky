@@ -1,6 +1,7 @@
 import React from 'react'
 import Aux from '../HOC/Aux';
 import {FaBars} from 'react-icons/fa';
+import Logo from '../../images/ts-1.png'
 import { Nav,NavContainer , NavLogo , MobileIcon, NavMenu, NavItem, NavLink , NavBtn, NavBtnLink } from './navbarStyling';
 
 
@@ -9,7 +10,7 @@ const Navbar = () => {
         <Aux>
             <Nav>
                 <NavContainer>
-                    <NavLogo to='/'>TS</NavLogo>
+                    <NavLogo to='/'> <img src={Logo} alt='logo' style={{width:'90px' , height: '100%'}}/> </NavLogo>
                     <MobileIcon>
                         <FaBars/>
                     </MobileIcon>
