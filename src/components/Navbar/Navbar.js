@@ -6,8 +6,8 @@ import { Nav,NavContainer ,
      NavLogo ,MobileIcon, 
       NavMenu, NavItem, 
       NavLink , NavBtn, NavBtnLink } from './navbarStyling';
-
-
+      
+      
 const Navbar = (props) => {
     return (
         <Aux>
@@ -19,16 +19,16 @@ const Navbar = (props) => {
                     </MobileIcon>
                     <NavMenu>
                         <NavItem>
-                            <NavLink to='rules'>Rules</NavLink>
+                            <NavLink to='/rules'>Rules</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to='Application'>Application</NavLink>
+                            <NavLink to='/Application'>Application</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to='Category'>Category</NavLink>
+                            <NavLink to='/Category'>Category</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink to='Shop'>Shop</NavLink>
+                            <NavLink to='/Shop'>streamers</NavLink>
                         </NavItem>
 
 
@@ -38,6 +38,9 @@ const Navbar = (props) => {
                     </NavBtn>
                 </NavContainer>
             </Nav>
+         
+            
+            
         </Aux>
     )
 }
