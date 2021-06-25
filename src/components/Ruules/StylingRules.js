@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 
 export const RulesContainer = styled.section`
-        
+     
+
          background: #000;
         width: 100%;
         height: 100%;
@@ -30,11 +31,13 @@ font-family: 'Jost', sans-serif;
 
 export const CardContainer = styled.div`
     display: grid;
-    grid-template-columns: auto ;
+    grid-template-rows: auto ;
     grid-gap: 20px;
     justify-content: center;
+    align-items: center;
     width: 100%;
     padding-bottom: 100px;
+    
     
 
 `
@@ -46,11 +49,16 @@ export const CardContainer = styled.div`
     background: #01bf71 ;
     border-radius: 15px;
     transition: 0.8s all ease;
+    
     &:hover {
         
         box-shadow: rgba(127, 255, 0, 0.5) 0px 7px 29px 0px;
        
     } 
+    @media screen and (max-width:930px) {
+        width: 90%;
+        margin-left: 1.5rem;
+        }
  
  `
 
