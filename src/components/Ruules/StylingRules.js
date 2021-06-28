@@ -82,6 +82,7 @@ export const CardContent = styled.div`
     font-family: 'Cinzel', serif;
 font-family: 'Jost', sans-serif;
     margin-bottom: 10px;
+    font-weight: bold;
  `
 
 
