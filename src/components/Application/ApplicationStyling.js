@@ -1,8 +1,39 @@
 import Styled from "styled-components";
 
-
-export const StreamersContainer = Styled.div`
+export const AppContainer = Styled.section`
+    width: 100%;
+    height: 100%;
+  
+    display: grid;
+    grid-template-columns: auto;
+    
+    @media screen and (max-width: 1020px) {
+    
+    height: 180vh;
+   
      
+
+}
+
+`  
+
+export const AppImgContainer = Styled.section`
+    width: 100%;
+    height: 100%; 
+    position: absolute;
+    
+`
+export const Image = Styled.img`
+    width: 100%;
+    height:100%;
+    --o-object-fit: cover;
+    object-fit: cover;
+    
+    
+`
+
+export const ApplicationContainer = Styled.div`
+        
         background: #141414;
         height:auto;
         display: grid;
@@ -15,15 +46,22 @@ export const StreamersContainer = Styled.div`
 
 export const Title = Styled.div`
         color: #fff;
+        z-index: 2;
+        
+        
 `
 export const TitleH1 = Styled.h1`
         text-align: center;
         padding: 2rem;
+        font-size: 60px;
+        color:  #fff;
+        font-family: 'Roboto', sans-serif;
+      
 `
 
-export const Streamerss = Styled.div`
+export const App = Styled.div`
         display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -45,8 +83,9 @@ export const Streamerss = Styled.div`
 }
 
 `
-export const StreamerCard = Styled.div`
+export const AppCard = Styled.div`
     position: relative;
+    background: rgba(20,20,20,1);
     width:320px;
     height: 330px;
     color: #ffffff;
@@ -60,7 +99,7 @@ export const StreamerCard = Styled.div`
         }
 `
 export const Card = Styled.div`
-        
+  
 `
 export const ImgDiv = Styled.div`
     width: 100%;
@@ -79,20 +118,31 @@ export const Bio = Styled.div`
     height: 100%;
     position: relative;
     margin-top: 20px;
+    
 `
 export const BioTitle = Styled.h3`
         color: #fff;
         padding-bottom:  10px;
         font-family: 'Prompt', sans-serif;
+        text-align: center;
+        
 
 `
 export const BioP = Styled.p`
         color: #fff;
         margin-top: 10px;
+        text-align: center;
        
 `
 
-export const TwitchBtn = Styled.button`
+export const CardImg = Styled.img`
+           width: 100%;
+    height: 170px;
+    --o-object-fit: cover;
+    object-fit: cover;
+`
+
+export const AppBtn = Styled.button`
         width: 100%;
     outline: none;
     border: none;

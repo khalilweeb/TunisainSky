@@ -24,9 +24,7 @@ const Navbar = (props) => {
                         <NavItem>
                             <NavLink to='/Application'>Application</NavLink>
                         </NavItem>
-                        <NavItem>
-                            <NavLink to='/Category'>Category</NavLink>
-                        </NavItem>
+                
                         <NavItem>
                             <NavLink to='/streamers'>streamers</NavLink>
                         </NavItem>
