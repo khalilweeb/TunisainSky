@@ -10,7 +10,7 @@ const HeroSection = (props) => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
             </HeroBg>
             <HeroContent>
-                <HeroH1>Welcom to our server</HeroH1>
+                <HeroH1>Welcome to our server</HeroH1>
                 <HeroP> 
                     e Lorem Ipsum est simplement du faux texte employé dans la 
                     composition et la mise en page avant impression. 

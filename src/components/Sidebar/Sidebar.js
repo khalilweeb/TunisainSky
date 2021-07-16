@@ -6,7 +6,7 @@ const Sidebar = (props) => {
             <Icon onClick={props.toggle}>
                 <CloseIcon/>
             </Icon >
-            <SideBarWrapper>
+            <SideBarWrapper> 
                 <SideBarMenu>
                     <SideBarLink to='/rules'> Rules </SideBarLink>
                     <SideBarLink to='/Application'> Application </SideBarLink>

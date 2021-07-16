@@ -66,6 +66,7 @@ export const  CardH1 = styled.h1`
     color: #fff;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
     font-family: 'Cinzel', serif;
 font-family: 'Jost', sans-serif;
 font-family: 'Staatliches', cursive;
@@ -74,7 +75,9 @@ font-family: 'Staatliches', cursive;
 `
 
 export const CardContent = styled.div`
-
+    transition: 0.9s ease-in-out;
+        display: ${({ issOpen }) => (issOpen ? 'block': 'none')}; 
+        top:  ${({ issOpen }) => (issOpen ? '0': '-100%')};
     padding: 10px;
 
 `

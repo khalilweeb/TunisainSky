@@ -49,7 +49,7 @@ const Category = (props) => {
                             <BioTitle>Police Application</BioTitle>
                             <BioP>Want to fight crime? here's the police application</BioP>
                         </Bio>
-                        <AppBtn>Police Application</AppBtn>
+                        <AppBtn onClick={props.policeLink}>Police Application</AppBtn>
                     </Card>
                 </AppCard>
                
@@ -77,7 +77,7 @@ const Category = (props) => {
                             <BioTitle>Streamer Application</BioTitle>
                             <BioP>Looking to stream on our server? here's the streamer application</BioP>
                         </Bio>
-                        <AppBtn>Streamer Application</AppBtn>
+                        <AppBtn onClick={props.stremerLink}>Streamer Application</AppBtn>
                     </Card>
                 </AppCard>
                

@@ -6,7 +6,7 @@ import { RulesContainer ,
         CardH1,
          CardContent,
         CardP} from './StylingRules';
-const Rules = () => {
+const Rules = (props) => {
     return (
         <>
          <RulesContainer>
@@ -15,8 +15,8 @@ const Rules = () => {
              </RulesH1>
             <CardContainer>
                <Card>
-                   <CardH1>PowerGaming</CardH1>
-                   <CardContent>
+                   <CardH1 onClick={props.toggleRules}>PowerGaming</CardH1>
+                   <CardContent issOpen={props.issOpen}>
                        <CardP>[exp:](ta3mel fight b kartouch dhed gang 5 vs 5 w tmout gang lawla 
                            hiya 5assra w lo5ra rabeha (flouss..)
                            </CardP>
@@ -29,8 +29,8 @@ const Rules = () => {
                    </CardContent>
                 </Card> 
                 <Card>
-                   <CardH1>MetaGaming</CardH1>
-                   <CardContent>
+                   <CardH1  onClick={props.toggleRules1}>MetaGaming</CardH1>
+                   <CardContent issOpen={props.issOpen1}>
                        <CardP>
                            ➛ tekhou info Hors rp w testa3meleha fi rp <br/> Exp :
                             streamsnipe walla info mn discord wala OOC[out of caracter]
@@ -40,8 +40,8 @@ const Rules = () => {
                    </CardContent>
                 </Card> 
                 <Card>
-                   <CardH1  >VOL</CardH1>
-                   <CardContent>
+                   <CardH1 onClick={props.toggleRules2} >VOL</CardH1>
+                   <CardContent issOpen={props.issOpen2}>
                        <CardP>
                        ➛ t5af 3ala hyet l caracter mta3ek W ta3teha 9ima kima in real life <br/>
                        Exp : ki yabda wa7ed 7ez 3liik sle7 T5af 3la 7yatak w Tasma3 Klemou
@@ -51,8 +51,8 @@ const Rules = () => {
                    </CardContent>
                 </Card> 
                 <Card>
-                   <CardH1>nlr</CardH1>
-                   <CardContent>
+                   <CardH1 onClick={props.toggleRules3}>nlr</CardH1>
+                   <CardContent issOpen={props.issOpen3}>
                        <CardP>
                        ➛ W enti fel coma matnajem tetfakker 7atta chay melli sar bahdhek ama tetfakker elli sar 9bal matodkhol lel coma <br/>
                            </CardP>
@@ -110,8 +110,8 @@ const Rules = () => {
                    </CardContent>
                 </Card> 
                 <Card>
-                   <CardH1>Battle_play</CardH1>
-                   <CardContent>
+                   <CardH1 onClick={props.toggleRules4}>Battle_play</CardH1>
+                   <CardContent issOpen={props.issOpen4}>
                        <CardP>
                        [exp:](ta3mel fight b kartouch dhed gang 5 vs 5 w tmout gang lawla hiya 5assra w lo5ra rabeha (flouss..)
                         </CardP>
@@ -120,8 +120,8 @@ const Rules = () => {
                    </CardContent>
                 </Card>
                 <Card>
-                   <CardH1>Force_rp</CardH1>
-                   <CardContent>
+                   <CardH1 onClick={props.toggleRules5}>Force_rp</CardH1>
+                   <CardContent issOpen={props.issOpen5}>
                        <CardP>
                        ➛ testa3mel el pouvoir mta3ek 3al players <br/>
                     [exp:](tebraki wa7ed w t9ollou ejbedli flousek mel bank walla 5arrajli karhbtek mel gc..) <br/>
